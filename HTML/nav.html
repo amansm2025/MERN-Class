@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        .navbar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+
+            background-color:red;
+            width:100%;
+            padding:10px;
+        }
+
+        
+        #menu,
+        #search,
+        #cart,
+        #user{
+
+            width:100px;
+            height:50px;
+            background-color:hwb(68 4% 2%);
+
+            border:2px solid black;
+            cursor: pointer;
+            
+            
+
+            justify-content:right;
+            /* align-items:center; */
+            border-radius:10px 0px 3px 0px;
+        }
+        #logo{
+            height:50px;
+            width:50px;
+            border-radius: 100%;
+            background-color:white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar">
+
+        <div id="logo"></div>
+
+        <div id="menu"></div>
+
+        <div id="search"></div>
+
+        <div id="cart"></div>
+
+        <div id="user"></div>
+
+    </div>
+
+</body>
+</html>

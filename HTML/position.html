@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Position Properties</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+}
+
+
+.static-box{
+    position:static;
+    background:lightblue;
+    padding:20px;
+    margin:20px;
+    border:2px solid blue;
+}
+
+
+.relative-box{
+    position:relative;
+    left:50px;
+    top:10px;
+    background:lightgreen;
+    padding:20px;
+    margin:20px;
+    border:2px solid green;
+}
+
+
+.parent{
+    position:relative;
+    width:400px;
+    height:200px;
+    background:#ddd;
+    margin:20px;
+    border:2px solid black;
+}
+
+.absolute-box{
+    position:absolute;
+    top: 40px;
+    right: 80px;
+    background:orange;
+    padding:50px;
+    border:2px solid red;
+}
+
+
+.fixed-box{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:black;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+
+.sticky-box{
+    position:sticky;
+    top:0;
+    background:purple;
+    color:white;
+    padding:15px;
+    font-size:20px;
+}
+
+
+.content{
+    height:1200px;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sticky-box">
+    Sticky Position
+</div>
+
+<div class="static-box">
+    Static Position
+</div>
+
+<div class="relative-box">
+    Relative Position
+</div>
+
+<div class="parent">
+    Parent Div
+
+    <div class="absolute-box">
+        Absolute Position
+    </div>
+</div>
+
+<div class="content">
+    Scroll Down To See Fixed And Sticky Effect
+</div>
+
+<div class="fixed-box">
+    Fixed Position
+</div>
+
+</body>
+</html>
