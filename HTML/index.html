@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z Index</title>
+
+  <style>
+
+    body{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .box{
+      height:100px;
+      width:100px;
+      position:relative;
+    }
+
+    .box1{
+      background:red;
+      left:0px;
+    }
+
+    .box2{
+      background:blue;
+      left:-40px;
+      bottom: 50px;
+      z-index:-3;
+    }
+
+    .box3{
+      background:green;
+      left:-80px;
+      z-index:-3;
+      top: 50px;
+    }
+
+    .box4{
+      background:black;
+      left:-120px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box box3"></div>
+  <div class="box box4"></div>
+
+</body>
+</html>

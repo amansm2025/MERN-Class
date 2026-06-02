@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+:root{
+    --bg1:red;
+    --h1:500px;
+    --w1:100%;
+
+    --bg:rgb(51,255,0);
+    --hs:100px;
+    --ws:100%;
+
+    --bgsec:rgb(255,196,0);
+    --hsec:100px;
+    --wsec:200px;
+    --leftsec:10px;
+}
+
+#box{
+    height:var(--h1);
+    width:var(--w1);
+    background-color:var(--bg1);
+}
+
+#a{
+    height:100px;
+    width:100%;
+    background-color:gray;
+}
+
+#second{
+    display:flex;
+    position:relative;
+    left:var(--leftsec);
+
+    /* background-color:var(--bg); */
+    height:var(--hs);
+    width:var(--ws);
+}
+
+.box{
+    height:var(--hsec);
+    width:var(--wsec);
+    background-color:var(--bgsec);
+
+    position:relative;
+    left:var(--leftsec);
+    margin:10px;
+    justify-content: center;
+}
+#last{
+    
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="box">
+
+    <div id="a"></div>
+
+    <div id="second">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div id="last"></div>
+
+</div>
+
+</body>
+</html>

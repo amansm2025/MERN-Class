@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id card</title>
+</head>
+<style>
+    .container
+    {
+        height: 750px;
+        width: 500px;
+        padding-left: 30%;
+    }
+    .bluebox
+    {
+        border-top-right-radius: 10%;
+        border-top-left-radius: 10%;
+        height: 300px;
+        width: 500px;
+        background-color:hsl(254, 86%, 25%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .photo
+    {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        /* background-image: url(Professional2.jpeg); */
+        background-color: white;
+        border: 2px solid blue;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 250px;
+    }
+    .details
+    {
+        height:100px;
+        width: 100px;
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+    .icons
+    {
+        height: 100px;
+        width: 400px;
+        margin-left: 20%;
+        display: flex;
+        gap: 15px;
+    }
+    .inner
+    {
+        height: 70px;
+        width: 70px;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+    .insta
+    {
+        height: 70px;
+        width: 70px;
+        border-radius: 50px;
+        border: 1px solid black;
+        background-image: url(insta.jpg);
+        background-size: contain;
+    }
+    .leetcode
+    {
+        height: 70px;
+        width: 70px;
+        border-radius: 50px;
+        border: 1px solid black;
+        background-image: url(youtube.png);
+        background-size: contain;
+    }
+    .gfg
+    {
+        height: 70px;
+        width: 70px;
+        border-radius: 50px;
+        border: 1px solid black;
+        background-image: url(gfg.jpeg);
+        background-size: contain;
+    }
+    .youtube
+    {
+         height: 70px;
+        width: 70px;
+        border-radius: 50px;
+        border: 1px solid black;
+        background-image: url(leetcode.webp);
+        background-size: contain;
+    }
+    .sub
+    {
+        height: 100px;
+        width: 400px;
+        margin-left: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .subscribe
+    {
+        height: 50px;
+        width: 150px;
+        border-radius: 150px;
+        border: 1px solid black;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .message
+    {
+        height: 50px;
+        width: 150px;
+        border-radius: 150px;
+        border: 1px solid black;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .activity
+    {
+        height: 150px;
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 150px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="bluebox">
+            <div class="photo"></div>
+        </div>
+         <div class="details">
+            <p><b>CodinLab</b></p>
+            <i>Coder&Gamer</i>
+        </div>
+        <div class="icons">
+            <div class="insta"></div>
+            <div class="leetcode"></div>
+            <div class="gfg"></div>
+            <div class="youtube"></div>
+        </div>
+        <div class="sub">
+            <div class="subscribe"><b>Subscribe</b></div>
+            <div class="message"><b>Message</b></div>
+        </div>
+        <div class="activity">
+            <div class="likes">♡60.4k |</div>
+            <div class="comments">69.9k |</div>
+            <div class="shares">⤺12.4k</div>
+        </div>
+    </div>
+</body>
+</html>
